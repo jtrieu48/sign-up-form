@@ -3,6 +3,7 @@
 */
 :root{
     --form-txt: rgba(255, 255, 255, .5);
+    --dusky-green: rgb(6, 170, 94);
     --darky: #1d2b3a;
 
 }
@@ -11,20 +12,40 @@
     Common Styling
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+}
+body {
+    overflow: hidden;
+    background-color: var(--dusky-green);
 }
 
 /*
     Sign-up Card Section
 */
-.card-container{
+.card-container {
     display:grid;
     grid-template-columns: calc(100% - 60%) auto;
     height: 100vh;
     width: 100%;
     overflow: hidden;
     background-color: var(--darky);
+}
+
+.form-container{
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 50px;
+    color: var(--form-txt);
+}
+
+.image-container{
+    display:grid;
+    place-items:center;
+    background-color: var(--dusky-green);
+    color: white;
 }
